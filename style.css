@@ -1,0 +1,67 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background:white;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'DOS';
+    src: url(fonts/DOS.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+a {
+font-family: 'DOS';
+text-decoration: none;
+color: black;
+position: relative;
+height: 14px;
+top: 86px;
+left: 64px;
+filter: drop-shadow(0px 0px 8px #000000);
+}
+
+a2 {
+    font-family: 'DOS';
+    text-decoration: none;
+    color: black;
+    position: relative;
+    height: 14px;
+    top: 86px;
+    left: 48px;
+    pointer-events: none;
+    }
+
+h1 {
+    font-family: 'DOS';
+    text-decoration: none;
+    color: black;
+    position: relative;
+    height: 24px;
+    top: 86px;
+    left: 48px;
+    pointer-events: none;
+    }
+
+.cg2m {
+    text-align: center;
+    width: 48px;
+  }
+
+  .globe {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    pointer-events: none;
+    filter: drop-shadow(0px 4px 4px #000000);
+
+
+}
