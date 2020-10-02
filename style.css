@@ -1,0 +1,51 @@
+body {
+
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, #cc99c9, #9ec1cf, #9ee09e, #fdfd97, #feb144, #ff6663);
+    background-size: 600%, 600%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+    
+    padding: 0;
+    margin: 0;
+    user-select: none;
+
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+
+}
+
+
+
+@-webkit-keyframes AnimationName {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+.background {
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+padding: 0;
+margin: 0;
+background-image: url(img/cg2m.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
