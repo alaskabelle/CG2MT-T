@@ -1,51 +1,53 @@
-body {
-
-    background: rgb(255,255,255);
-    background: linear-gradient(270deg, #cc99c9, #9ec1cf, #9ee09e, #fdfd97, #feb144, #ff6663);
-    background-size: 600%, 600%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    font-family: 'Inter', sans-serif;
-    
-    padding: 0;
+html, body {
+    margin: 0; padding: 0;
+  }
+  .background {
+    background: #000000;
+    background: url(images/bg.png) repeat 0 0;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
-    user-select: none;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
+    box-sizing: border-box;
+    animation: slide 2s linear infinite;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .cg2m {
+    text-align: center;
+    width: 48px;
+  }
+  
+  @keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -1920px 0; }
+  }
 
+  .globe {
 
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    pointer-events: none;
 
 }
 
+.text {
 
+    text-align: center;
+    bottom: 100%;
+    padding: 20px;
+    color: #FFFFFF;
 
-@-webkit-keyframes AnimationName {
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
+    }
 
-.background {
-position: absolute;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-padding: 0;
-margin: 0;
-background-image: url(cg2m.png);
-background-size: cover;
-background-repeat: no-repeat;
+.text a {
+    text-decoration: none;
+    color: #000000;
 }
