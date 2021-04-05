@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body>
+<script src="https://unpkg.com/tripetto-runner-foundation"></script>
+<script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+<script src="https://unpkg.com/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiR2J1TnJJNVh4SGVVYkxZK0t3NnYrUFJoK29yUHlZTnNYTFd6NTA5NVZlVT0iLCJkZWZpbml0aW9uIjoiUHBUS1VwcllKMEFNdkozMmcvQ2taMW9DRVV5Zm9tdVIyemZtZS9iaktVMD0iLCJ0eXBlIjoiY29sbGVjdCJ9.dwfUNpgZfa2VYZQIHv_J6jvOnc_p2WFLLws0_hxGdgo" });
+
+TripettoAutoscroll.run({
+    element: document.body,
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit
+});
+</script>
+</body>
+</html>
